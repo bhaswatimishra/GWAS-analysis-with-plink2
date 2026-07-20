@@ -1,111 +1,61 @@
 # GWAS Analysis with PLINK2
 
-A documented implementation of a Genome-Wide Association Study (GWAS) workflow using **PLINK2**.
+This repository documents my attempt to understand the **Genome-Wide Association Study (GWAS) workflow** using **PLINK2**.
 
-This repository documents my learning journey while implementing a standard GWAS pipeline using publicly available educational datasets. The project focuses on understanding each stage of a typical GWAS workflow, from genotype quality control to association analysis.
-
----
-
-## Project Objectives
-
-- Understand the complete GWAS workflow.
-- Learn genotype quality control using PLINK2.
-- Perform relatedness analysis using the KING algorithm.
-- Study population stratification and its impact on association studies.
-- Perform association testing and interpret GWAS results.
+The purpose of this project was not to claim a complete GWAS analysis, but to learn and document the major concepts involved in a typical GWAS pipeline, including quality control, relatedness analysis, population stratification, association analysis, and result interpretation.
 
 ---
 
-## Workflow
+## What I explored
 
-```text
-Raw Genotype Data
-        │
-        ▼
-Quality Control
-        │
-        ▼
-Relatedness Analysis (KING)
-        │
-        ▼
-Population Stratification
-        │
-        ▼
-Association Testing
-        │
-        ▼
-Multiple Testing
-        │
-        ▼
-Manhattan Plot
-        │
-        ▼
-QQ Plot
-```
+* The overall GWAS workflow
+* Quality Control (QC) concepts
+* Minor Allele Frequency (MAF)
+* Hardy-Weinberg Equilibrium (HWE)
+* Relatedness analysis using KING
+* Population stratification
+* PCA/MDS and covariates
+* Association analysis concepts
+* p-value and Odds Ratio (OR)
+* Multiple testing correction
+* Manhattan plot and QQ plot interpretation
 
 ---
 
 ## Repository Structure
 
-```
+```text
 GWAS-analysis-with-plink2/
 │
-├── commands/
-├── workflow/
-└── notes/
+├── commands/   # Selected PLINK2 commands with their purpose and explanations
+├── notes/      # Conceptual notes and revision material for GWAS topics
 ```
 
 ---
 
-## Topics Covered
+## Notes and Learning Material
 
-- Sample Quality Control
-- SNP Quality Control
-- Minor Allele Frequency (MAF)
-- Hardy-Weinberg Equilibrium (HWE)
-- Relatedness Analysis (KING)
-- Founder Filtering
-- Population Stratification
-- Logistic Association Analysis
-- Multiple Testing Correction
-- Manhattan Plot
-- QQ Plot
+The **notes/** directory contains the conceptual notes that I learned while studying GWAS. 
+
+The **commands/** directory includes a few PLINK2 commands from the workflow along with explanations of why they are used and what they represent in the GWAS pipeline.
 
 ---
 
-## Software
+## Important Note
 
-- PLINK2
-- Ubuntu (WSL)
-- Bash
-- Git
-- GitHub
+This repository is intended as a **learning and documentation project**. It reflects my effort to understand the concepts, workflow steps, and practical aspects of GWAS, rather than presenting a fully completed research-grade GWAS analysis.
 
 ---
 
-## Skills Demonstrated
+## Tools Used
 
-- Linux
-- Bash
-- PLINK2
-- Bioinformatics
-- GWAS
-- Population Genetics
-- Quality Control
-- Association Analysis
+* PLINK2
+* Linux / WSL
+* Bash
+* Git and GitHub
 
 ---
 
-## Challenges
+## Learning Outcome
 
-- Learned the differences between PLINK 1.9 and PLINK2 workflows.
-- Relatedness analysis was performed using the KING algorithm.
-- The complete 1000 Genomes integration was studied conceptually because of computational limitations.
-
----
-
-## Future Work
-
-- Complete PCA using the 1000 Genomes reference panel.
-- Perform Polygenic Risk Score (PRS) analysis.
-- Explore larger GWAS datasets.
+Through this project, I gained a clearer understanding of how a GWAS workflow is structured, why each step is important, and how different concepts such as QC, relatedness, population stratification, p-values, OR, Manhattan plots, and QQ plots are connected in genetic association studies.
